@@ -1,0 +1,66 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Write Single',{
+        category: 'inTech',
+        color: '#3FADB5',
+        defaults: {
+            name: {value:""},
+            ip: {value:"localhost:5000"},
+            slave: {value:""},
+            reg: {value:""},
+            value: {value:""},
+            enableretry:{value:false}
+
+        },
+        inputs:1,
+        outputs:1,
+        icon: "intechtt.png",
+        align: 'right',
+        label: function() {
+            return this.name||"Write Single";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="Write Single">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-ip"><i class="icon-tag"></i> Host</label>
+        <input type="text" id="node-input-ip" placeholder="localhost:5000">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-slave"><i class="icon-tag"></i> ID slave</label>
+        <input type="text" id="node-input-slave" placeholder="ID slave">
+    </div>
+
+    <div class="form-row">
+        <label for="reg"><i class="icon-tag"></i> Registro</label>
+        <input type="text" id="node-input-reg" placeholder="Registro">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-value"><i class="icon-tag"></i> Valor</label>
+        <input type="text" id="node-input-value" placeholder="Valor a ser escrito">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-enableretry"><i class="fa fa-random"></i> Habilita retry?</label>
+        <input type="checkbox" id="node-input-enableretry" style="display:inline-block; width:20px; vertical-align:baseline;"><span style="font-size:8px;">(Habilita retentativas de comunicação em caso de timeout (10x))</span>
+
+    </div>
+
+    <div class="form-row">
+        <a href="https://intech-automacao.com.br/solucoes/6" target="_blank">Acesse a documentação aqui</a>
+    </div>
+    
+
+</script>
+ 
+<script type="text/x-red" data-help-name="Write Single">
+    <p>A node that increments every time a new message is received and sends Protocol write in return.<br/>
+    </p>
+</script>

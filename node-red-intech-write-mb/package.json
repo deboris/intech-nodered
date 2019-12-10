@@ -1,0 +1,16 @@
+{
+  "name": "node-red-intech-write-mb",
+  "version": "0.0.1",
+  "description": "Nó para escrita modbus PLC PI in-Tech",
+  "dependencies": {
+    "simple-get": "^2.7.0"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "sample": "modbusWriteNodes/modbusWriteNode.js"
+    }
+  }
+}

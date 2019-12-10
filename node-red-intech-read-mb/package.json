@@ -1,0 +1,16 @@
+{
+  "name": "intech-read-mb",
+  "version": "0.0.1",
+  "description": "No para leitura modbus PLC PI in-Tech",
+  "dependencies": {
+    "simple-get": "^2.7.0"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "sample": "modbusReadNodes/modbusReadNode.js"
+    }
+  }
+}
