@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Nó para escrita modbus multipla PLC PI in-Tech",
   "dependencies": {
-    "simple-get": "^2.7.0"
+    "simple-get": "^4.0.1"
   },
   "keywords": [
     "node-red"
